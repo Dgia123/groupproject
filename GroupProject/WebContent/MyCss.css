@@ -1,0 +1,52 @@
+#container{
+	position:absolute;
+	top:200px;
+	right:200px;
+}
+div{
+	text-align:right;
+}
+input[type=text],input[type=email],input[type=password]{
+	padding:10px 20px;
+	border-color:DodgerBlue:
+}
+button{
+	position:absolute;
+	top:150px;
+	right:200px;
+	width:60px;
+}
+h1{
+	font-family:georgia;
+	color:DodgerBlue;
+	text-align:center;
+	font-size:50px;
+}
+h3{
+    font-family:georgia;
+	color:red;
+    position:absolute;
+    right:100px;
+    top:100px;
+}
+p{
+	color:black;
+	postion:relative:
+	right:100px;
+}
+body{
+	
+background-image: url("Image/back.jpg");
+background-size:1550px 800px;
+text-align:center;
+
+
+}
+body{
+	background-color: #f3eee8;
+}
+#gradeneed{
+	position:absolute;
+	left:950px;
+	align:right;
+}
