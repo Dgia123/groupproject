@@ -1,3 +1,4 @@
+package com.prog32758;
 
 
 import java.io.IOException;
@@ -5,7 +6,6 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
@@ -17,13 +17,13 @@ import javax.servlet.http.HttpSession;
 import com.prog32758.Student;
 
 
-public class CreateProfile extends HttpServlet {
+public class Matching extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     
-    public CreateProfile() {
+    public Matching() {
         super();
-       
+        
     }
 
 	
@@ -43,8 +43,7 @@ public class CreateProfile extends HttpServlet {
 		
 		        connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/groupproject?user=root&password=1234");
 		          
-		        String st = "insert into grade (userid,schoolid,programid,semaster,courseid,needhelp,grade)"
-						+ "values(?,?,?,?,?,?,?)";
+		        String st = "select * from grade where ;
 	            PreparedStatement pstatement = connect.prepareStatement(st);
 					
 		            for(int i =0;i<courses.length;i++) {		            
@@ -61,8 +60,6 @@ public class CreateProfile extends HttpServlet {
 		       }catch(SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
 			}finally {response.sendRedirect("Matching.jsp");}
-		
-	
 	}
 
 }
